@@ -1,0 +1,228 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MAX CALCULATOR</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/form.css" rel="stylesheet">
+    <link href="assets/css/timeline.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/icomoon.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script>
+      function calc(){
+        var w = document.in_form.w.value ;
+        w = parseInt(w) ;
+        var r = document.in_form.r.value ;
+        r = parseInt(r) ;
+        var bw = document.in_form.bw.value ;
+        bw = parseInt(bw) ;
+        var max = w * r * 0.0333 + w;
+        document.out_form.max.value = max + " kg";
+        var level1 = "Untrained";
+        var level2 = "Novice";
+        var level3 = "Intermediate";
+        var level4 = "Advanced";
+        var level5 = "Elite";
+        if(bw < 52){
+          if(max < 50){
+            document.out_form.level.value = level1 ;
+          }else if(max >= 50 && max < 60){
+            document.out_form.level.value = level2 ;
+          }else if(max >= 60 && max < 82.5){
+            document.out_form.level.value = level3 ;
+          }else if(max >= 82.5 && max < 100){
+            document.out_form.level.value = level4 ;
+          }else if(max >= 100){
+            document.out_form.level.value = level5 ;
+          }
+        }else if(bw >= 52 && bw < 56){
+          if(max < 52.5){
+            document.out_form.level.value = level1 ;
+          }else if(max >= 52.5 && max < 62.5){
+            document.out_form.level.value = level2 ;
+          }else if(max >= 62.5 && max < 90){
+            document.out_form.level.value = level3 ;
+          }else if(max >= 90 && max < 110){
+            document.out_form.level.value = level4 ;
+          }else if(max >= 110){
+            document.out_form.level.value = level5 ;
+          }
+        }else if(bw >= 56 && bw < 60){
+          if(max < 57.5){
+            document.out_form.level.value = level1 ;
+          }else if(max >= 57.5 && max < 70){
+            document.out_form.level.value = level2 ;
+          }else if(max >= 70 && max < 95){
+            document.out_form.level.value = level3 ;
+          }else if(max >= 95 && max < 117.5){
+            document.out_form.level.value = level4 ;
+          }else if(max >= 117.5){
+            document.out_form.level.value = level5 ;
+          }
+        }else if(bw >= 60 && bw < 67){
+          if(max < 65){
+            document.out_form.level.value = level1 ;
+          }else if(max >= 65 && max < 77.5){
+            document.out_form.level.value = level2 ;
+          }else if(max >= 77.5 && max < 107.5){
+            document.out_form.level.value = level3 ;
+          }else if(max >= 107.5 && max < 132.5){
+            document.out_form.level.value = level4 ;
+          }else if(max >= 132.5){
+            document.out_form.level.value = level5 ;
+          }
+        }else if(bw >= 67 && bw < 75){
+          if(max < 70){
+            document.out_form.level.value = level1 ;
+          }else if(max >= 70 && max < 85){
+            document.out_form.level.value = level2 ;
+          }else if(max >= 85 && max < 115){
+            document.out_form.level.value = level3 ;
+          }else if(max >= 115 && max < 145){
+            document.out_form.level.value = level4 ;
+          }else if(max >= 145){
+            document.out_form.level.value = level5 ;
+          }
+        }else if(bw >= 75 && bw < 82){
+          if(max < 75){
+            document.out_form.level.value = level1 ;
+          }else if(max >= 75 && max < 90){
+            document.out_form.level.value = level2 ;
+          }else if(max >= 90 && max < 125){
+            document.out_form.level.value = level3 ;
+          }else if(max >= 125 && max < 157.5){
+            document.out_form.level.value = level4 ;
+          }else if(max >= 157.5){
+            document.out_form.level.value = level5 ;
+          }
+        }else if(bw >= 82 && bw < 90){
+          if(max < 80){
+            document.out_form.level.value = level1 ;
+          }else if(max >= 80 && max < 97.5){
+            document.out_form.level.value = level2 ;
+          }else if(max >= 97.5 && max < 132.5){
+            document.out_form.level.value = level3 ;
+          }else if(max >= 132.5 && max < 162.5){
+            document.out_form.level.value = level4 ;
+          }else if(max >= 162.5){
+            document.out_form.level.value = level5 ;
+          }
+        }else if(bw >= 90){
+          if(max < 82.5){
+            document.out_form.level.value = level1 ;
+          }else if(max >= 82.5 && max < 102.5){
+            document.out_form.level.value = level2 ;
+          }else if(max >= 102.5 && max < 137.5){
+            document.out_form.level.value = level3 ;
+          }else if(max >= 137.5 && max < 172.5){
+            document.out_form.level.value = level4 ;
+          }else if(max >= 172.5){
+            document.out_form.level.value = level5 ;
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+              <a class="navbar-brand" href="index.php"><span class="strong-title"><i class="fa fa-calculator"></i> MAX CALCULATOR</span></a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+
+          <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+  </nav>
+    <div class="row">
+      <div class="col-md-12 content-margin-top">
+        <legend align="center">MAX CALCULATOR</legend>
+      </div>
+    <div class="row">
+      <div class="col-md-4">
+
+
+      </div>
+      <div class="col-md-8">
+        <div class="col-md-4" align="center">
+        <form name="in_form" class="form-horizontal">
+        <div class="form-group">
+          <label class="col-sm-3 control-label">重量</label>
+          <div class="col-sm-9">
+            <input type=text name="w" value="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 control-label">回数</label>
+          <div class="col-sm-9">
+            <input type=text name="r" value="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 control-label">体重</label>
+          <div class="col-sm-9">
+            <input type=text name="bw" value=""><br>
+          </div>
+        </div>
+        <input type="button" class="btn btn-primary" value="CALCULATE" onClick="calc()"><br>
+        </form>
+        <form name="out_form">
+        <div class="form-group" class="form-horizontal">
+          <label class="col-sm-12 control-label">あなたのMAX値</label>
+            <input type=text name="max" value="">
+          </div>
+        <div class="form-group">
+          <label class="col-sm-12 control-label">あなたのレベル</label>
+            <input type=text name="level" value=""><br><br>
+          </div>
+        </div>
+        </form>
+        <div class="col-md-4">
+          <h3>あなたのMAXとレベルを算出します。</h3>
+          ベンチプレスの重量と回数、体重を入力してください。<br>
+          <span style="border-bottom: solid 3px red;">MAX値 = 重量 × 回数 × 0.0333 + 重量</span><br><br>
+          <table class="table table-hover">
+              <thead>
+                  <tr>
+                      <th>レベル</th>
+                      <th>説明</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <th>Beginner</th>
+                      <td>リフターの5%以上</td>
+                  </tr>
+                  <tr>
+                      <th>Novice</th>
+                      <td>リフターの20%以上</td>
+                  </tr>
+                  <tr>
+                      <th>Intermediate</th>
+                      <td>リフターの50%以上</td>
+                  </tr>
+                  <tr>
+                      <th>Advanced</th>
+                      <td>リフターの80%以上</td>
+                  </tr>
+                  <tr>
+                      <th>Elite</th>
+                      <td>リフターの95%以上</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+    </div>
+  </body>
